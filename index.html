@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Profil" />
+        <h1>Muhammad Danar Tri kusuma</h1>
+    </header>
+    
+    <main>
+        <style>
+            /* Styling untuk elemen <nav> dan <ul> */
+            nav {
+                background-color: #333; /* Warna background navigasi */
+                padding: 10px;
+            }
+    
+            nav ul {
+                list-style-type: none; /* Menghilangkan bullet points */
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+    
+            nav ul li {
+                display: inline; /* Menampilkan item list secara horizontal */
+                margin-right: 20px;
+            }
+    
+            nav ul li a {
+                color: white; /* Warna teks link */
+                text-decoration: none; /* Menghilangkan underline pada link */
+                padding: 10px 20px;
+                background-color: #444; /* Warna background item list */
+                border-radius: 5px; /* Membuat sudut elemen link agak melengkung */
+                transition: background-color 0.3s; /* Animasi perubahan warna saat hovxer */
+            }
+    
+            nav ul li a:hover {
+                background-color: #555; /* Warna background saat di-hover */
+            }
+    
+            /* Tambahan efek pada link yang aktif */
+            nav ul li a.active {
+                background-color: #007BFF; /* Warna background khusus untuk item yang aktif */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <nav>
+            <ul>
+                <li><a href="#" class="active" onclick="showContent('biodata')">Biodata</a></li>
+                <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+                <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+                <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+                <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+            </ul>
+        </nav>
+        
+        <section id="content">
+            <div id="biodata">
+                <h2>Biodata</h2>
+                <p>NIM: 2023081044</p>
+                <p>Nama: Muhammad Danar Tri Kusuma</p>
+                <p>Agama: Islam</p>
+                <p>Tanggal Lahir: 10 Maret 2005</p>
+                <p>Tempat Lahir: Tangerang</p>
+            </div>
+            <div id="pendidikan" style="display: none;">
+                <h2>Pendidikan</h2>
+                <p><strong>2023 - Sekarang | Universitas Pembangunan Jaya | Program Studi Sistem informasi</strong></p>
+                <hr style="border: 1px solid black;">
+                <p>Saya memilih jurusan Sistem Informasi karena minat saya yang besar pada teknologi dan
+                    bagaimana teknologi dapat diterapkan untuk memecahkan masalah bisnis dan operasional
+                    </p>
+                    &nbsp;&nbsp;&nbsp;
+                    <p><strong>2020 - 2023 | SMK Fadilah | Jurusan Multimedia</strong></p>
+                    <hr style="border: 1px solid black;">
+                    <p>Saya memilih jurusan Multimedia karena memiliki minat yang mendalam terhadap bidang
+                        teknologi dan seni digital. memungkinkan saya untuk mengembangkan keterampilan dalam
+                        berbagai aspek seperti desain grafis, animasi, pengembangan web, dan produksi video.</p>
+                    &nbsp;&nbsp;&nbsp;
+                    <p><strong>2017 - 2020 | SMP Dahlia</strong></p>
+            </div>
+            <div id="pengalaman" style="display: none;">
+                <h2>Pengalaman</h2>
+                <p><strong>2024 (Mei) |Divisi Perlengkapan | Universitas Pembangunnan Jaya</strong></p>
+                <hr style="border: 1px solid black;">
+               <p> Bekerja sama dengan tim untuk merencanakan dan mengeksekusi pengaturan tempat,
+                mendukung kebutuhan teknis, dan memastikan kelancaran operasional selama acara
+                berlangsung</p>
+                &nbsp;&nbsp;&nbsp;
+                <p><strong>2022 (Oktober) - 2023 (Januari) | Praktek Kerja Lapangan | Kantor PT Setia Sinergi Sejahtera</strong></p>
+                <hr style="border: 1px solid black;">
+                <P>Bertanggung jawab membantu staf dalam pembuatan desain iklan dalam suatu produk
+                    perusahaan tersebut.
+                    Bertanggung jawab membantu staf untuk mempromosikan iklan tersebut di sosial media dan
+                    di website</P>
+            </div>
+            <div id="keahlian" style="display: none;">
+                <h2>Keahlian</h2>
+                <p><strong>Kemampuan Teknis (Technical Skills) Alat dan Teknologi:</strong></p>
+<ul>
+    <li>Microsoft Office</li>
+    <li>Adobe Illustrator</li>
+    <li>Adobe Photoshop</li>
+    <li>Canva</li>
+    <li>Adobe Premiere</li>
+    <li>Capcut</li>
+</ul>
+                <p><strong>Kemampuan Non-Teknis (Soft Skills):</strong></p>
+               <ul>
+                    <li>Komunikasi: Kemampuan untuk berkomunikasi secara efektif baik lisan maupun tulisan</li>
+                    <li>Manajemen Waktu: Kemampuan untuk mengatur waktu dengan efektif</li>
+                    
+                </ul>
+
+            </div>
+            <div id="publikasi" style="display: none;">
+                <h2>Publikasi</h2>
+                <p>Membuat film di SMK untuk tugas akhir UAS </p>
+            </div>
+        </section>
+        
+        <aside>
+            <h2>Hobi</h2>
+            <p>Bulu tangkis</p>
+            <p>Bola</p>
+            <p>Naik Gunung</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <div class="left">
+            <p>Gmail: @danarkusuma03@gmail.com</p>
+            <p>Instagram: @muhammaddanar_</p>
+        </div>
+        <div class="center">
+            <p>&copy; Copyright 2020. All Rights Reserved</p>
+        </div>
+        <div class="right">
+            <p>Profil Danar </p>
+            <p>PIBS</p>
+        </div>
+    </footer>
+
+    <script>
+        function showContent(contentId) {
+            const sections = document.querySelectorAll('section > div');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+header, nav, section, aside, footer {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+header {
+  background: linear-gradient(to right, #2C3E50, #4B79A1); /* Gradient biru gelap ke abu-abu biru */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  color: white;
+}
+
+
+header img {
+  height: 100px; /* Ukuran gambar diperbesar */
+  width: auto;
+  border-radius: 50%; /* Membuat gambar profil melingkar */
+  margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+header h1 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+nav {
+  width: 25%;
+  background-color: #333; /* Warna latar belakang digelapkan */
+  color: white;
+  border-right: 1px solid #ccc; /* Border kanan */
+  padding: 10px; /* Jarak dalam navbar */
+}
+
+nav ul {
+  list-style-type: none; /* Menghilangkan bullet pada list */
+  padding: 0; /* Menghilangkan padding */
+}
+
+nav ul li {
+  margin: 10px 0; /* Jarak antar item navbar */
+}
+
+nav ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: #fff; /* Warna teks link menjadi putih */
+  font-weight: bold; /* Membuat teks lebih tebal */
+  padding: 8px 12px; /* Jarak dalam link */
+  display: block; /* Membuat seluruh area link bisa diklik */
+  border-radius: 4px; /* Membuat sudut link membulat */
+  transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+nav ul li a:hover {
+  background-color: #575757; /* Warna latar belakang saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+nav ul li a.active {
+  background-color: #4CAF50; /* Warna untuk link yang aktif */
+  color: white;
+}
+
+section {
+  width: 50%;
+  padding: 50px;
+  background-color: white; /* Latar belakang konten */
+  border-left: 1px solid #ccc;
+}
+
+aside {
+  width: 25%;
+  padding: 10px;
+  background-color: #333; /* Sama dengan warna nav */
+  color: white; /* Pastikan teks berwarna putih agar kontras */
+}
+
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+footer .left {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+}
+
+footer .center, footer .right {
+  flex: 1;
+  text-align: center;
+}
+
+footer .right {
+  text-align: right;
+}
+
+footer .social {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 25%;
+  }
+
+  section {
+    width: 75%;
+  }
+
+  aside {
+    width: 100%;
+    display: block;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  footer .center, footer .right {
+    text-align: left;
+  }
+
+  footer .center {
+    margin-top: 10px;
+  }
+
+  footer .right {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav, section, aside {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .left, footer .center, footer .right {
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .center, footer .right {
+    margin-top: 10px;
+  }
+}
